@@ -1,0 +1,26 @@
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+
+# Bases de datos locales
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Pruebas y herramientas
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Configuración de editores
+.vscode/
+.idea/

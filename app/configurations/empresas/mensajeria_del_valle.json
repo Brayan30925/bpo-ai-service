@@ -1,0 +1,54 @@
+
+{
+    "empresa": "MENSAJERIA DEL VALLE",
+    "categorias": [
+        {
+            "nombre": "Incidente técnico",
+            "palabras_clave": [
+                "falla",
+                "daño",
+                "no funciona",
+                "avería",
+                "problema técnico"
+            ]
+        },
+        {
+            "nombre": "Consulta informativa",
+            "palabras_clave": [
+                "información",
+                "consulta",
+                "estado",
+                "informar",
+                "seguimiento"
+            ]
+        },
+        {
+            "nombre": "Solicitud administrativa",
+            "palabras_clave": [
+                "certificado",
+                "documento",
+                "actualizar datos",
+                "factura",
+                "cambio de información"
+            ]
+        }
+    ],
+    "prioridades": {
+        "tipo": "microservicio",
+        "servicio": "prioridad_cliente"
+    },
+    "delegaciones": {
+        "Incidente técnico": {
+            "responsable": "EMPRESA",
+            "proximo_paso": "GESTION_EXTERNA"
+        },
+        "Consulta informativa": {
+            "responsable": "BPO",
+            "proximo_paso": "RESPUESTA_DIRECTA"
+        },
+        "Solicitud administrativa": {
+            "responsable": "BPO",
+            "proximo_paso": "RESPUESTA_DIRECTA"
+        }
+    }
+}

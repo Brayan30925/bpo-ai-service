@@ -1,0 +1,89 @@
+
+{
+    "empresa": "GASES DEL ORINOCO",
+    "categorias": [
+        {
+            "nombre": "Incidente técnico",
+            "palabras_clave": [
+                "falla",
+                "daño",
+                "no funciona",
+                "avería",
+                "estufa",
+                "gas",
+                "reparación"
+            ]
+        },
+        {
+            "nombre": "Consulta informativa",
+            "palabras_clave": [
+                "información",
+                "consulta",
+                "estado",
+                "informar",
+                "cómo",
+                "cuando"
+            ]
+        },
+        {
+            "nombre": "Solicitud administrativa",
+            "palabras_clave": [
+                "certificado",
+                "documento",
+                "actualizar datos",
+                "cambio de titular",
+                "factura"
+            ]
+        }
+    ],
+    "prioridades": {
+        "tipo": "reglas_provisionales",
+        "reglas": [
+            {
+                "prioridad": "Alta",
+                "palabras_clave": [
+                    "urgente",
+                    "emergencia",
+                    "riesgo",
+                    "fuga",
+                    "peligro"
+                ]
+            },
+            {
+                "prioridad": "Media",
+                "palabras_clave": [
+                    "falla",
+                    "daño",
+                    "problema",
+                    "reparación",
+                    "revision",
+                    "no funciona"
+                ]
+            },
+            {
+                "prioridad": "Baja",
+                "palabras_clave": [
+                    "información",
+                    "consulta",
+                    "certificado",
+                    "copia"
+                ]
+            }
+        ],
+        "prioridad_por_defecto": "Baja"
+    },
+    "delegaciones": {
+        "Incidente técnico": {
+            "responsable": "EMPRESA",
+            "proximo_paso": "GESTION_EXTERNA"
+        },
+        "Consulta informativa": {
+            "responsable": "BPO",
+            "proximo_paso": "RESPUESTA_DIRECTA"
+        },
+        "Solicitud administrativa": {
+            "responsable": "BPO",
+            "proximo_paso": "RESPUESTA_DIRECTA"
+        }
+    }
+}
